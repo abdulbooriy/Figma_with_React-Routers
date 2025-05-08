@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../src/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@import "tailwindcss";
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+}
+
+@theme {
+  --color-bg-primary: #1c1e53;
+  --color-primary: #ffffff;
+  --color-secondary: #bbbbcb;
+}
