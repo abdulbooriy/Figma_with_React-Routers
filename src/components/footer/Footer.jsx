@@ -1,9 +1,9 @@
-import React from "react";
 import logo from "../../assets/images/Logo.svg";
 import facebook__icon from "../../assets/icons/facebook__icon.svg";
 import twitter__icon from "../../assets/icons/twitter__icon.svg";
 import linkedin__icon from "../../assets/icons/linkedin__icon.svg";
 import instagram__icon from "../../assets/icons/instagram__icon.svg";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,7 +11,10 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className=" flex gap-[260px] ">
           <div>
-            <img className="pb-[24px]" src={logo} alt="footer logo image" />
+            <NavLink to={"/"}>
+              {" "}
+              <img className="pb-[24px]" src={logo} alt="footer logo image" />
+            </NavLink>
             <p className="font-[Poppins] font-medium text-secondary opacity-80 w-[399px] pb-[86px]">
               We are always open to discuss your project and improve your online
               presence.

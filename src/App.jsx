@@ -1,14 +1,14 @@
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import Main from "./components/main/Main";
+import MainRouters from "./components";
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
-      <Main />
+      <MainRouters />
       <Footer />
-    </>
+    </div>
   );
 }
 

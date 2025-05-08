@@ -1,5 +1,6 @@
-import React from "react";
 import logo from "../../assets/images/Logo.svg";
+import { NavLink } from "react-router-dom";
+import "./style.css";
 
 const Header = () => {
   return (
@@ -7,42 +8,43 @@ const Header = () => {
       <div className="container mx-auto">
         <nav className="h-[92px] flex items-center justify-between">
           <div>
-            <a href="#">
+            <NavLink to={"/"}>
+              {" "}
               <img src={logo} alt="logo image" />
-            </a>
+            </NavLink>
           </div>
 
           <div className="flex items-center gap-10 font-[Poppins] font-medium">
             <ul className="flex gap-10 text-secondary">
               <li>
-                <a href="#">
-                  <span className="text-primary">Home</span>
-                </a>
+                <NavLink className="header__link" to={"/"}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <a href="#">
-                  <span>About us</span>
-                </a>
+                <NavLink className="header__link" to={"/about"}>
+                  About
+                </NavLink>
               </li>
               <li>
-                <a href="#">
-                  <span>Pricing</span>
-                </a>
+                <NavLink className="header__link" to={"/pricing"}>
+                  Pricing
+                </NavLink>
               </li>
               <li>
-                <a href="#">
-                  <span>Work</span>
-                </a>
+                <NavLink className="header__link" to={"/work"}>
+                  Work
+                </NavLink>
               </li>
               <li>
-                <a href="#">
-                  <span>Blog</span>
-                </a>
+                <NavLink className="header__link" to={"/blog"}>
+                  Blog
+                </NavLink>
               </li>
             </ul>
 
             <button className="w-[185px] h-[60px] bg-transparent border-2 border-[#474975] rounded-[41px] text-primary">
-              <a href="#">Contact us</a>
+              <NavLink to={"/contact/us"}>Contact us</NavLink>
             </button>
           </div>
         </nav>
