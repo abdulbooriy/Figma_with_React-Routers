@@ -1,11 +1,12 @@
 import React from "react";
 import hero__image from "../../assets/images/hero__image.svg";
+import arrow__icon from "../../assets/icons/arrow__icon.svg";
 
 const Hero = () => {
   return (
-    <section className="w-full h-[760px] bg-bg-primary">
-      <div className="container mx-auto">
-        <div className="flex items-center pt-[126px] gap-[60px]">
+    <section className="w-full h-[700px] bg-bg-primary">
+      <div className="container mx-auto pt-[126px]">
+        <div className="flex items-center gap-[60px]">
           <div>
             <h1 className="w-[582px] text-[54px] font-semibold font-[Poppins] text-primary text-xs-[74px] pb-[24px]">
               Building stellar websites for early startups
@@ -20,11 +21,14 @@ const Hero = () => {
                   <span>View our work</span>
                 </a>
               </button>
-              <button className="text-primary">
+              <div className="flex items-center gap-4">
                 <a href="#">
-                  <span>View Pricing</span>
+                  <span className="text-primary">View Pricing</span>
                 </a>
-              </button>
+                <a href="#">
+                  <img src={arrow__icon} alt="arrow icon" />
+                </a>
+              </div>
             </div>
           </div>
           <div>

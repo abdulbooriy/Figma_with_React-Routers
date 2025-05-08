@@ -3,7 +3,7 @@ import logo from "../../assets/images/Logo.svg";
 
 const Header = () => {
   return (
-    <header className="w-full bg-bg-primary">
+    <header className="w-full h-[92px] bg-bg-primary">
       <div className="container mx-auto">
         <nav className="h-[92px] flex items-center justify-between">
           <div>
@@ -11,8 +11,6 @@ const Header = () => {
               <img src={logo} alt="logo image" />
             </a>
           </div>
-
-          <a href="" target=""></a>
 
           <div className="flex items-center gap-10 font-[Poppins] font-medium">
             <ul className="flex gap-10 text-secondary">
