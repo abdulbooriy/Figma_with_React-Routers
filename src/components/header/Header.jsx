@@ -43,9 +43,12 @@ const Header = () => {
               </li>
             </ul>
 
-            <button className="w-[185px] h-[60px] bg-transparent border-2 border-[#474975] rounded-[41px] text-primary">
-              <NavLink to={"/contact/us"}>Contact us</NavLink>
-            </button>
+            <NavLink className="header__link" to={"/contact/us"}>
+              {" "}
+              <button className="w-[185px] h-[60px] bg-transparent border-2 border-[#474975] rounded-[41px] text-primary cursor-pointer">
+                Contact us
+              </button>
+            </NavLink>
           </div>
         </nav>
       </div>
